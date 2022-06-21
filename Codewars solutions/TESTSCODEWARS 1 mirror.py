@@ -1,7 +1,4 @@
-from pickletools import string1
-import string
-
-
+# Need to rewerse words and write them in each rows
 def solution(string):
     return string[::-1]
 print(solution('world' ' ' '>=' ' ' 'dlrow'))
