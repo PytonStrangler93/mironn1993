@@ -5,10 +5,7 @@
 #"moOse" --> false (ignore letter case)
 
 def is_isogram(s):
-    x =  sum(s.count(i) for i in 'aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz')
-    if x > 1:
-        return False
-    else:
-        return True
-    
-print(is_isogram('Dermatoglyphics'))
+    s = s.lower()
+    return len(set(s)) == len(s)
+#АХУИТЕЛЬНОЕ РЕШЕНИЕ ЕСЛИ ДЛИННА ПОСЛЕ СОРТИРОВКИ РАВНА ДЛИННЕ ДО СОРТИРОВКИ ВОЗВРАЩАЕТ ТРУ ЕСЛИ НЕТ ТО ФОЛС
+#Команда set УДАЛЯЕТ ВСЕ ПОВТОРЕНИЯ СИМВОЛОВ ИЛИ ЗНАЧЕНИЙ В ЛЮБОМ ТИПЕ ДАННЫХ!!
